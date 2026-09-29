@@ -1,0 +1,4045 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="DR Tecnologia — soluções em tecnologia, computadores, manutenção, redes, suporte e DR PDV para empresas."
+    >
+
+    <title>
+        DR Tecnologia | Soluções que mantêm seu negócio funcionando
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .pdv-login-preview {
+            width: min(100%, 520px);
+            margin: 0 auto;
+            border: 1px solid rgba(8, 124, 255, 0.32);
+            border-radius: 22px;
+            overflow: hidden;
+            background: #05080d;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 0 55px rgba(8, 124, 255, 0.10);
+        }
+        .pdv-login-preview-top {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 0 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(13, 20, 30, 0.96);
+        }
+        .pdv-login-preview-top span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .pdv-login-preview-label {
+            margin-left: auto;
+            font-size: 9px;
+            letter-spacing: 0.18em;
+            color: rgba(255, 255, 255, 0.45);
+        }
+        .pdv-login-preview img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .pdv-login-caption {
+            padding: 15px 18px 17px;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            background: #0a1018;
+            text-align: center;
+        }
+        .pdv-login-caption strong {
+            display: block;
+            color: #f4f7fb;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .pdv-login-caption span {
+            color: #7f8da1;
+            font-size: 11px;
+        }
+    </style>
+
+
+        <style>
+            /* =========================
+               SERVIÇOS — APRESENTAÇÃO PROFISSIONAL
+            ========================== */
+            .services-pro {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .services-pro::before {
+                content: "";
+                position: absolute;
+                width: 520px;
+                height: 520px;
+                right: -260px;
+                top: 80px;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(0, 119, 255, .11) 0%, rgba(0, 119, 255, 0) 68%);
+                pointer-events: none;
+            }
+
+            .services-pro-head {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                gap: 40px;
+                margin-bottom: 58px;
+            }
+
+            .services-pro-head .section-heading {
+                max-width: 760px;
+                margin: 0;
+            }
+
+            .services-pro-head .section-heading p {
+                max-width: 690px;
+            }
+
+            .services-pro-head-link {
+                flex: 0 0 auto;
+                display: inline-flex;
+                align-items: center;
+                gap: 14px;
+                padding: 15px 20px;
+                border: 1px solid rgba(255,255,255,.12);
+                border-radius: 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: .02em;
+                background: rgba(255,255,255,.025);
+                transition: .25s ease;
+            }
+
+            .services-pro-head-link span {
+                color: #4ca3ff;
+                font-size: 18px;
+                transition: transform .25s ease;
+            }
+
+            .services-pro-head-link:hover {
+                border-color: rgba(46, 145, 255, .5);
+                background: rgba(30, 130, 255, .07);
+                transform: translateY(-2px);
+            }
+
+            .services-pro-head-link:hover span {
+                transform: translate(2px, -2px);
+            }
+
+            .services-pro-grid {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 16px;
+            }
+
+            .service-card {
+                position: relative;
+                min-height: 335px;
+                padding: 27px;
+                border: 1px solid rgba(255,255,255,.09);
+                border-radius: 18px;
+                background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+                box-shadow: 0 20px 60px rgba(0,0,0,.16);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                transition: transform .3s ease, border-color .3s ease, background .3s ease;
+            }
+
+            .service-card::before {
+                content: "";
+                position: absolute;
+                width: 180px;
+                height: 180px;
+                right: -95px;
+                bottom: -95px;
+                border-radius: 50%;
+                background: rgba(0, 119, 255, .08);
+                transition: .3s ease;
+            }
+
+            .service-card:hover {
+                transform: translateY(-6px);
+                border-color: rgba(53, 151, 255, .34);
+                background: linear-gradient(145deg, rgba(20, 117, 220, .11), rgba(255,255,255,.025));
+            }
+
+            .service-card:hover::before {
+                transform: scale(1.35);
+            }
+
+            .service-card-featured {
+                border-color: rgba(42, 143, 255, .28);
+                background: linear-gradient(145deg, rgba(13, 103, 205, .13), rgba(255,255,255,.025));
+            }
+
+            .service-card-system {
+                grid-column: span 2;
+            }
+
+            .service-card-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 16px;
+                position: relative;
+                z-index: 2;
+            }
+
+            .service-card-number {
+                font-size: 12px;
+                font-weight: 800;
+                letter-spacing: .12em;
+                color: #5eafff;
+            }
+
+            .service-card-label {
+                font-size: 9px;
+                font-weight: 800;
+                letter-spacing: .16em;
+                color: rgba(255,255,255,.42);
+            }
+
+            .service-card-icon {
+                width: 54px;
+                height: 54px;
+                margin: 32px 0 24px;
+                border-radius: 14px;
+                border: 1px solid rgba(70, 160, 255, .2);
+                background: linear-gradient(145deg, rgba(30, 132, 240, .16), rgba(255,255,255,.025));
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #69b5ff;
+            }
+
+            .service-icon-pc::before {
+                content: "";
+                width: 25px;
+                height: 17px;
+                border: 2px solid currentColor;
+                border-radius: 3px;
+                position: absolute;
+                top: 14px;
+            }
+
+            .service-icon-pc::after {
+                content: "";
+                width: 12px;
+                height: 2px;
+                background: currentColor;
+                position: absolute;
+                bottom: 13px;
+                border-radius: 4px;
+            }
+
+            .service-icon-upgrade span {
+                font-size: 28px;
+                font-weight: 300;
+                line-height: 1;
+            }
+
+            .service-icon-support span {
+                font-size: 28px;
+                font-weight: 300;
+                line-height: 1;
+            }
+
+            .service-icon-network::before,
+            .service-icon-network::after {
+                content: "";
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border: 1.5px solid currentColor;
+                border-radius: 50%;
+            }
+
+            .service-icon-network::before {
+                top: 12px;
+                left: 23px;
+            }
+
+            .service-icon-network::after {
+                bottom: 11px;
+                left: 12px;
+                box-shadow: 23px 0 0 -1.5px rgba(0,0,0,0), 0 0 0 1.5px currentColor;
+            }
+
+            .service-icon-network span {
+                position: absolute;
+                width: 25px;
+                height: 1px;
+                background: currentColor;
+                transform: rotate(90deg);
+            }
+
+            .service-icon-network i {
+                position: absolute;
+                width: 25px;
+                height: 1px;
+                background: currentColor;
+                transform: rotate(29deg);
+                left: 13px;
+                top: 28px;
+            }
+
+            .service-icon-network b {
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border: 1.5px solid currentColor;
+                border-radius: 50%;
+                right: 11px;
+                bottom: 11px;
+            }
+
+            .service-icon-system span {
+                font-size: 14px;
+                font-weight: 900;
+                letter-spacing: -.04em;
+            }
+
+            .service-card h3 {
+                position: relative;
+                z-index: 2;
+                margin: 0 0 12px;
+                font-size: 20px;
+                line-height: 1.2;
+                color: #fff;
+                letter-spacing: -.025em;
+            }
+
+            .service-card p {
+                position: relative;
+                z-index: 2;
+                margin: 0;
+                max-width: 430px;
+                color: rgba(255,255,255,.58);
+                font-size: 14px;
+                line-height: 1.7;
+            }
+
+            .service-card p strong {
+                color: rgba(255,255,255,.86);
+                font-weight: 700;
+            }
+
+            .service-card-footer {
+                position: relative;
+                z-index: 2;
+                margin-top: auto;
+                padding-top: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+                color: rgba(255,255,255,.38);
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+            }
+
+            .service-card-arrow {
+                color: #5eafff;
+                font-size: 17px;
+                transition: transform .25s ease;
+            }
+
+            .service-card:hover .service-card-arrow {
+                transform: translate(3px, -3px);
+            }
+
+            .services-pro-cta {
+                margin-top: 22px;
+                padding: 27px 30px;
+                border: 1px solid rgba(255,255,255,.09);
+                border-radius: 18px;
+                background: linear-gradient(100deg, rgba(13, 102, 205, .12), rgba(255,255,255,.025));
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 30px;
+            }
+
+            .services-pro-cta-eyebrow {
+                display: block;
+                margin-bottom: 8px;
+                color: #5eafff;
+                font-size: 9px;
+                font-weight: 800;
+                letter-spacing: .17em;
+            }
+
+            .services-pro-cta h3 {
+                margin: 0;
+                color: #fff;
+                font-size: 20px;
+                letter-spacing: -.02em;
+            }
+
+            .services-pro-cta-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                flex: 0 0 auto;
+                padding: 14px 19px;
+                border-radius: 9px;
+                background: #1479df;
+                color: #fff;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 800;
+                transition: .25s ease;
+                box-shadow: 0 10px 30px rgba(20,121,223,.18);
+            }
+
+            .services-pro-cta-button span {
+                font-size: 17px;
+                transition: transform .25s ease;
+            }
+
+            .services-pro-cta-button:hover {
+                background: #2088ef;
+                transform: translateY(-2px);
+            }
+
+            .services-pro-cta-button:hover span {
+                transform: translate(2px, -2px);
+            }
+
+            @media (max-width: 980px) {
+                .services-pro-head {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+
+                .services-pro-grid {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+
+                .service-card-system {
+                    grid-column: span 2;
+                }
+            }
+
+            @media (max-width: 680px) {
+                .services-pro-head {
+                    margin-bottom: 35px;
+                }
+
+                .services-pro-head-link {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                .services-pro-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .service-card,
+                .service-card-system {
+                    grid-column: auto;
+                    min-height: 310px;
+                }
+
+                .services-pro-cta {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+
+                .services-pro-cta-button {
+                    width: 100%;
+                }
+            }
+        </style>
+
+
+
+        <style>
+            /* =========================
+               SERVIÇOS — AJUSTE FINAL PARA FUNDO CLARO
+            ========================== */
+            #servicos {
+                scroll-margin-top: 105px;
+            }
+
+            .services-pro {
+                background: #f5f8fc;
+            }
+
+            .services-pro .section-heading h2 {
+                color: #111827;
+            }
+
+            .services-pro .section-heading h2 strong {
+                color: #1784ee;
+            }
+
+            .services-pro .section-heading p {
+                color: #59677a;
+            }
+
+            .services-pro-head-link {
+                color: #172033;
+                border-color: #dbe4ef;
+                background: rgba(255,255,255,.78);
+                box-shadow: 0 10px 30px rgba(18, 43, 70, .05);
+            }
+
+            .services-pro-head-link:hover {
+                border-color: rgba(23,132,238,.35);
+                background: #ffffff;
+            }
+
+            .service-card {
+                border-color: #dfe7f0;
+                background: #ffffff;
+                box-shadow: 0 18px 45px rgba(25, 47, 72, .08);
+            }
+
+            .service-card::before {
+                background: rgba(23,132,238,.07);
+            }
+
+            .service-card:hover {
+                border-color: rgba(23,132,238,.35);
+                background: #ffffff;
+                box-shadow: 0 24px 55px rgba(25, 47, 72, .12);
+            }
+
+            .service-card-featured {
+                border-color: rgba(23,132,238,.28);
+                background: linear-gradient(145deg, #f8fbff, #ffffff);
+            }
+
+            .service-card-number {
+                color: #238cf0;
+            }
+
+            .service-card-label {
+                color: #8391a5;
+            }
+
+            .service-card-icon {
+                border-color: rgba(23,132,238,.20);
+                background: linear-gradient(145deg, #edf6ff, #ffffff);
+                color: #238cf0;
+            }
+
+            .service-card h3 {
+                color: #172033;
+            }
+
+            .service-card p {
+                color: #637084;
+            }
+
+            .service-card p strong {
+                color: #253247;
+            }
+
+            .service-card-footer {
+                color: #8190a5;
+            }
+
+            .service-card-arrow {
+                color: #238cf0;
+            }
+
+            .services-pro-cta {
+                border-color: #dfe7f0;
+                background: linear-gradient(100deg, #edf6ff, #ffffff);
+                box-shadow: 0 15px 40px rgba(25, 47, 72, .06);
+            }
+
+            .services-pro-cta h3 {
+                color: #172033;
+            }
+
+            @media (max-width: 680px) {
+                #servicos {
+                    scroll-margin-top: 90px;
+                }
+            }
+        </style>
+
+
+<style>
+/* =========================================================
+   PROJETOS REALIZADOS / INSTAGRAM
+========================================================= */
+.projects-section{
+    position:relative;
+    padding:110px 0 120px;
+    background:
+        radial-gradient(circle at 12% 10%, rgba(35,139,255,.10), transparent 34%),
+        linear-gradient(180deg,#f6f9fd 0%,#ffffff 48%,#f5f8fc 100%);
+    overflow:hidden;
+}
+.projects-section::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    right:-260px;
+    top:90px;
+    border:1px solid rgba(30,132,255,.10);
+    border-radius:50%;
+    pointer-events:none;
+}
+.projects-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:46px;
+}
+.projects-head .section-heading{
+    max-width:720px;
+}
+.projects-head .section-heading h2{
+    margin-bottom:18px;
+}
+.projects-head .section-heading h2 strong{
+    color:#1784ff;
+    font-weight:800;
+}
+.projects-head-copy{
+    max-width:430px;
+    color:#64748b;
+    font-size:15px;
+    line-height:1.8;
+}
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:18px;
+}
+.project-card{
+    position:relative;
+    min-height:300px;
+    border-radius:22px;
+    overflow:hidden;
+    background:#0b1220;
+    border:1px solid rgba(19,126,255,.14);
+    box-shadow:0 18px 50px rgba(15,31,54,.10);
+    transform:translateZ(0);
+}
+.project-card:nth-child(1),
+.project-card:nth-child(2){
+    grid-column:span 6;
+}
+.project-card:nth-child(3){
+    grid-column:span 5;
+}
+.project-instagram-card{
+    grid-column:span 7;
+    display:flex;
+    align-items:center;
+    padding:38px;
+    background:
+        radial-gradient(circle at 85% 15%,rgba(36,139,255,.26),transparent 34%),
+        linear-gradient(135deg,#07101e,#0d1c31 62%,#102d4c);
+}
+.project-image{
+    width:100%;
+    height:100%;
+    min-height:300px;
+    object-fit:cover;
+    display:block;
+    transition:transform .65s cubic-bezier(.2,.7,.2,1);
+}
+.project-card:hover .project-image{
+    transform:scale(1.045);
+}
+.project-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:flex-end;
+    padding:26px;
+    background:linear-gradient(180deg,transparent 35%,rgba(4,10,18,.84) 100%);
+}
+.project-overlay-content{
+    color:#fff;
+}
+.project-tag{
+    display:inline-flex;
+    padding:7px 10px;
+    border:1px solid rgba(255,255,255,.20);
+    border-radius:999px;
+    background:rgba(8,16,28,.45);
+    backdrop-filter:blur(10px);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+.project-overlay h3{
+    margin:0;
+    font-size:20px;
+    line-height:1.2;
+}
+.project-overlay p{
+    margin:7px 0 0;
+    color:rgba(255,255,255,.76);
+    font-size:13px;
+}
+.project-instagram-inner{
+    position:relative;
+    z-index:1;
+    max-width:560px;
+}
+.project-instagram-kicker{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+.project-instagram-kicker img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    border-radius:50%;
+    background:#fff;
+    padding:3px;
+}
+.project-instagram-kicker span{
+    color:#8fc7ff;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+}
+.project-instagram-inner h3{
+    color:#fff;
+    font-size:31px;
+    line-height:1.12;
+    margin:0 0 14px;
+}
+.project-instagram-inner h3 strong{
+    color:#2d96ff;
+}
+.project-instagram-inner p{
+    color:rgba(255,255,255,.72);
+    line-height:1.8;
+    font-size:14px;
+    max-width:510px;
+    margin:0 0 24px;
+}
+.instagram-button{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:13px 18px;
+    border-radius:11px;
+    background:#1685ff;
+    color:#fff;
+    text-decoration:none;
+    font-weight:800;
+    font-size:13px;
+    box-shadow:0 10px 28px rgba(22,133,255,.22);
+    transition:transform .25s ease,background .25s ease;
+}
+.instagram-button:hover{
+    transform:translateY(-2px);
+    background:#0876ef;
+}
+.instagram-button span{
+    font-size:18px;
+}
+.projects-note{
+    margin-top:22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    color:#718096;
+    font-size:12px;
+}
+.projects-note strong{
+    color:#1d2939;
+}
+@media(max-width:900px){
+    .projects-head{
+        display:block;
+    }
+    .projects-head-copy{
+        margin-top:20px;
+    }
+    .project-card:nth-child(1),
+    .project-card:nth-child(2),
+    .project-card:nth-child(3),
+    .project-instagram-card{
+        grid-column:span 12;
+    }
+}
+@media(max-width:620px){
+    .projects-section{
+        padding:80px 0;
+    }
+    .project-card,
+    .project-image{
+        min-height:260px;
+    }
+    .project-instagram-card{
+        padding:28px;
+        min-height:360px;
+    }
+    .project-instagram-inner h3{
+        font-size:26px;
+    }
+    .projects-note{
+        display:block;
+        line-height:1.7;
+    }
+}
+</style>
+
+
+<style>
+/* =========================================================
+   AJUSTE FINAL — PROJETOS REALIZADOS / TEXTO LEGÍVEL
+========================================================= */
+.projects-section .section-heading h2 {
+    color: #111827 !important;
+}
+.projects-section .section-heading h2 strong {
+    color: #1784ee !important;
+}
+.projects-section .section-heading p {
+    color: #59677a !important;
+}
+.projects-section .eyebrow {
+    color: #1784ee !important;
+}
+.projects-section .eyebrow span {
+    background: #1784ee !important;
+}
+.projects-head-copy {
+    color: #59677a !important;
+}
+.projects-section {
+    color: #111827;
+}
+</style>
+
+<style>
+/* =========================================================
+   SOBRE — DR TECNOLOGIA / APRESENTAÇÃO INSTITUCIONAL
+========================================================= */
+.about-pro {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+    background: linear-gradient(180deg, #f8fbff 0%, #f4f7fb 100%);
+}
+
+.about-pro-grid {
+    position: absolute;
+    inset: 0;
+    opacity: .36;
+    background-image:
+        linear-gradient(rgba(23,132,238,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23,132,238,.055) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(90deg, transparent 0%, black 18%, black 82%, transparent 100%);
+    pointer-events: none;
+}
+
+.about-pro-glow {
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(2px);
+}
+
+.about-pro-glow-one {
+    left: -330px;
+    top: 50px;
+    background: radial-gradient(circle, rgba(23,132,238,.13) 0%, rgba(23,132,238,0) 69%);
+}
+
+.about-pro-glow-two {
+    right: -330px;
+    bottom: -220px;
+    background: radial-gradient(circle, rgba(23,132,238,.09) 0%, rgba(23,132,238,0) 69%);
+}
+
+.about-pro-container {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(350px, .83fr) minmax(0, 1.27fr);
+    gap: 86px;
+    align-items: center;
+}
+
+.about-pro-visual {
+    position: relative;
+    min-height: 560px;
+    overflow: hidden;
+    border-radius: 32px;
+    border: 1px solid rgba(45,146,242,.20);
+    background:
+        radial-gradient(circle at 50% 42%, rgba(23,132,238,.20), transparent 32%),
+        linear-gradient(145deg, #07101a 0%, #0b1724 55%, #06101a 100%);
+    box-shadow: 0 34px 90px rgba(11,35,62,.17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-pro-visual::before {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border: 1px solid rgba(255,255,255,.065);
+    border-radius: 24px;
+}
+
+.about-pro-visual::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    right: -55px;
+    border-radius: 50%;
+    border: 1px solid rgba(71,165,255,.16);
+}
+
+.about-pro-topline,
+.about-pro-bottomline {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255,255,255,.40);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    z-index: 5;
+}
+
+.about-pro-topline {
+    top: 28px;
+    justify-content: space-between;
+}
+
+.about-pro-bottomline {
+    bottom: 28px;
+    justify-content: center;
+}
+
+.about-pro-bottomline i {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #278ff0;
+    box-shadow: 0 0 9px rgba(39,143,240,.65);
+}
+
+.about-pro-mark {
+    position: relative;
+    z-index: 4;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 1px solid rgba(108,183,255,.27);
+    background: rgba(4,11,18,.82);
+    box-shadow: 0 0 0 15px rgba(23,132,238,.025), 0 0 85px rgba(23,132,238,.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(7px);
+}
+
+.about-pro-mark span {
+    color: #fff;
+    font-size: 76px;
+    line-height: .88;
+    font-weight: 800;
+    letter-spacing: -.08em;
+}
+
+.about-pro-mark small {
+    margin-top: 12px;
+    color: rgba(255,255,255,.60);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .32em;
+    padding-left: .32em;
+}
+
+.about-pro-orbit {
+    position: absolute;
+    border: 1px solid rgba(52,152,242,.24);
+    border-radius: 50%;
+}
+
+.about-pro .orbit-one {
+    width: 430px;
+    height: 245px;
+    transform: rotate(-19deg);
+}
+
+.about-pro .orbit-two {
+    width: 520px;
+    height: 305px;
+    transform: rotate(31deg);
+    border-color: rgba(255,255,255,.075);
+}
+
+.about-pro-chip {
+    position: absolute;
+    z-index: 6;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.09);
+    background: rgba(7,14,23,.78);
+    color: rgba(255,255,255,.67);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+.about-pro-chip span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2f99ff;
+    box-shadow: 0 0 10px rgba(47,153,255,.7);
+}
+
+.chip-one { top: 128px; left: 26px; }
+.chip-two { top: 208px; right: 24px; }
+.chip-three { bottom: 120px; left: 50px; }
+
+.about-pro-content {
+    max-width: 780px;
+}
+
+.about-pro-content h2 {
+    margin: 18px 0 24px;
+    color: #111c2d;
+    font-size: clamp(42px, 4.7vw, 68px);
+    line-height: 1.01;
+    letter-spacing: -.05em;
+}
+
+.about-pro-content h2 > span {
+    display: block;
+    color: #1784ee;
+    font-weight: 800;
+}
+
+.about-pro-content p {
+    max-width: 745px;
+    margin: 0 0 16px;
+    color: #5e6e83;
+    font-size: 17px;
+    line-height: 1.82;
+}
+
+.about-pro-content p strong {
+    color: #243247;
+}
+
+.about-pro-lead {
+    font-size: 19px !important;
+}
+
+.about-pro-solutions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.about-pro-solution {
+    min-height: 168px;
+    padding: 18px;
+    border: 1px solid #dfe7f0;
+    border-radius: 18px;
+    background: rgba(255,255,255,.82);
+    box-shadow: 0 14px 34px rgba(25,47,72,.065);
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.about-pro-solution:hover {
+    transform: translateY(-4px);
+    border-color: rgba(23,132,238,.32);
+    box-shadow: 0 20px 42px rgba(25,47,72,.10);
+}
+
+.about-pro-solution-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #1681ed;
+    background: #edf6ff;
+    border: 1px solid rgba(23,132,238,.16);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: .08em;
+}
+
+.about-pro-solution small {
+    display: block;
+    margin-bottom: 6px;
+    color: #7d8ca0;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: .16em;
+}
+
+.about-pro-solution strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #172235;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.about-pro-solution span {
+    display: block;
+    color: #6a788b;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.about-pro-quote {
+    position: relative;
+    margin-top: 24px;
+    padding: 18px 20px 18px 54px;
+    border-left: 2px solid #1986ee;
+    border-radius: 0 14px 14px 0;
+    background: linear-gradient(90deg, rgba(23,132,238,.06), rgba(23,132,238,0));
+    color: #46566b;
+    font-size: 14px;
+    line-height: 1.65;
+    font-weight: 600;
+}
+
+.about-pro-quote > span {
+    position: absolute;
+    left: 18px;
+    top: 13px;
+    color: #1784ee;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.about-pro-link {
+    margin-top: 25px;
+}
+
+@media (max-width: 1040px) {
+    .about-pro-container {
+        grid-template-columns: 1fr;
+        gap: 54px;
+    }
+
+    .about-pro-visual {
+        min-height: 470px;
+        max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .about-pro {
+        padding: 88px 0;
+    }
+
+    .about-pro-solutions {
+        grid-template-columns: 1fr;
+    }
+
+    .about-pro-solution {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .about-pro-visual {
+        min-height: 360px;
+        border-radius: 24px;
+    }
+
+    .about-pro-topline,
+    .about-pro-bottomline {
+        left: 20px;
+        right: 20px;
+        font-size: 7px;
+    }
+
+    .about-pro-topline span:last-child {
+        display: none;
+    }
+
+    .about-pro-bottomline {
+        gap: 8px;
+    }
+
+    .about-pro-mark {
+        width: 165px;
+        height: 165px;
+    }
+
+    .about-pro-mark span {
+        font-size: 54px;
+    }
+
+    .about-pro-mark small {
+        font-size: 7px;
+    }
+
+    .about-pro .orbit-one {
+        width: 280px;
+        height: 155px;
+    }
+
+    .about-pro .orbit-two {
+        width: 345px;
+        height: 195px;
+    }
+
+    .about-pro-chip {
+        font-size: 8px;
+        padding: 8px 10px;
+    }
+
+    .chip-one { top: 78px; left: 18px; }
+    .chip-two { top: 138px; right: 16px; }
+    .chip-three { bottom: 84px; left: 28px; }
+
+    .about-pro-content h2 {
+        font-size: 39px;
+    }
+
+    .about-pro-content p {
+        font-size: 15px;
+        line-height: 1.72;
+    }
+
+    .about-pro-lead {
+        font-size: 17px !important;
+    }
+
+    .about-pro-quote {
+        padding-left: 48px;
+        font-size: 13px;
+    }
+}
+</style>
+
+
+<style>
+/* =========================================================
+   POR QUE A DR — POSICIONAMENTO COMERCIAL
+========================================================= */
+.why-dr-section{
+    position:relative;
+    overflow:hidden;
+    padding:112px 0 118px;
+    background:
+        radial-gradient(circle at 88% 18%, rgba(27,137,246,.16), transparent 30%),
+        linear-gradient(135deg,#07111d 0%,#091827 52%,#06101a 100%);
+    color:#fff;
+}
+.why-dr-section::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    left:-300px;
+    bottom:-280px;
+    border:1px solid rgba(64,162,255,.15);
+    border-radius:50%;
+    pointer-events:none;
+}
+.why-dr-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:50px;
+    margin-bottom:48px;
+    position:relative;
+    z-index:2;
+}
+.why-dr-heading{
+    max-width:760px;
+}
+.why-dr-heading .eyebrow{
+    color:#63b4ff;
+}
+.why-dr-heading .eyebrow span{
+    background:#2d95f4;
+}
+.why-dr-heading h2{
+    margin:18px 0 14px;
+    font-size:clamp(42px,5vw,70px);
+    line-height:1;
+    letter-spacing:-.055em;
+    color:#fff;
+}
+.why-dr-heading h2 strong{
+    display:block;
+    color:#2f96f4;
+}
+.why-dr-heading p{
+    max-width:700px;
+    margin:0;
+    color:rgba(255,255,255,.60);
+    font-size:16px;
+    line-height:1.8;
+}
+.why-dr-signature{
+    flex:0 0 230px;
+    padding:20px 22px;
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:16px;
+    background:rgba(255,255,255,.035);
+    box-shadow:0 20px 50px rgba(0,0,0,.16);
+}
+.why-dr-signature small{
+    display:block;
+    margin-bottom:8px;
+    color:#6e7f93;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+}
+.why-dr-signature strong{
+    display:block;
+    color:#fff;
+    font-size:16px;
+    line-height:1.4;
+}
+.why-dr-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:14px;
+    position:relative;
+    z-index:2;
+}
+.why-dr-card{
+    min-height:245px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:20px;
+    background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
+    box-shadow:0 20px 55px rgba(0,0,0,.16);
+    transition:transform .28s ease,border-color .28s ease,background .28s ease;
+}
+.why-dr-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(54,157,249,.35);
+    background:linear-gradient(145deg,rgba(26,127,222,.12),rgba(255,255,255,.025));
+}
+.why-dr-card-number{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:46px;
+    color:#53aaff;
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:.16em;
+}
+.why-dr-card-number::after{
+    content:"↗";
+    font-size:18px;
+    font-weight:500;
+}
+.why-dr-card h3{
+    margin:0 0 11px;
+    font-size:19px;
+    line-height:1.25;
+    letter-spacing:-.02em;
+    color:#fff;
+}
+.why-dr-card p{
+    margin:0;
+    color:rgba(255,255,255,.56);
+    font-size:13px;
+    line-height:1.72;
+}
+.why-dr-bottom{
+    margin-top:20px;
+    padding:18px 22px;
+    border-top:1px solid rgba(255,255,255,.10);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    position:relative;
+    z-index:2;
+}
+.why-dr-bottom span{
+    color:rgba(255,255,255,.42);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.10em;
+    text-transform:uppercase;
+}
+.why-dr-bottom strong{
+    color:#fff;
+}
+@media(max-width:980px){
+    .why-dr-head{align-items:flex-start;flex-direction:column;}
+    .why-dr-signature{flex-basis:auto;width:100%;max-width:360px;}
+    .why-dr-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:620px){
+    .why-dr-section{padding:82px 0 88px;}
+    .why-dr-grid{grid-template-columns:1fr;}
+    .why-dr-card{min-height:auto;}
+    .why-dr-card-number{margin-bottom:34px;}
+    .why-dr-bottom{display:block;line-height:1.8;}
+    .why-dr-bottom span + span{display:block;margin-top:4px;}
+}
+</style>
+
+
+<style>
+/* =========================================================
+   CONTATO — FINAL / APRESENTAÇÃO COMERCIAL
+========================================================= */
+.contact-pro{
+    position:relative;
+    overflow:hidden;
+    padding:120px 0 125px;
+    background:
+        radial-gradient(circle at 84% 24%, rgba(20,132,240,.18), transparent 30%),
+        linear-gradient(135deg,#06111f 0%,#091827 56%,#07101d 100%);
+    color:#fff;
+}
+.contact-pro::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size:44px 44px;
+    mask-image:linear-gradient(to right,rgba(0,0,0,.75),transparent 72%);
+    pointer-events:none;
+}
+.contact-pro-grid{
+    position:absolute;
+    width:620px;
+    height:620px;
+    right:-250px;
+    top:-180px;
+    border:1px solid rgba(64,160,255,.13);
+    border-radius:50%;
+}
+.contact-pro-grid::after{
+    content:"";
+    position:absolute;
+    inset:56px;
+    border:1px solid rgba(64,160,255,.10);
+    border-radius:50%;
+}
+.contact-pro-glow{
+    position:absolute;
+    width:340px;
+    height:340px;
+    right:7%;
+    bottom:-150px;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(23,132,238,.22) 0%,rgba(23,132,238,0) 68%);
+    pointer-events:none;
+}
+.contact-pro-container{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:minmax(0,1.08fr) minmax(360px,.72fr);
+    align-items:center;
+    gap:78px;
+}
+.contact-pro-copy{max-width:720px;}
+.contact-pro .eyebrow{color:#53a9ff;}
+.contact-pro .eyebrow span{background:#53a9ff;}
+.contact-pro-copy h2{
+    margin:18px 0 20px;
+    color:#fff;
+    font-size:clamp(42px,5vw,68px);
+    line-height:1.02;
+    letter-spacing:-.045em;
+}
+.contact-pro-copy h2 strong{
+    display:block;
+    color:#238cf0;
+}
+.contact-pro-copy p{
+    max-width:650px;
+    margin:0;
+    color:rgba(255,255,255,.68);
+    font-size:17px;
+    line-height:1.8;
+}
+.contact-pro-actions{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:34px;
+}
+.contact-pro-primary,.contact-pro-secondary{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    text-decoration:none;
+    font-weight:800;
+    transition:.25s ease;
+}
+.contact-pro-primary{
+    padding:16px 20px;
+    border-radius:11px;
+    background:#1685ff;
+    color:#fff;
+    box-shadow:0 14px 34px rgba(22,133,255,.20);
+}
+.contact-pro-primary:hover{
+    transform:translateY(-2px);
+    background:#2590ff;
+}
+.contact-pro-primary span,.contact-pro-secondary span{font-size:18px;}
+.contact-pro-secondary{
+    padding:15px 18px;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:11px;
+    color:#dbe8f7;
+    background:rgba(255,255,255,.025);
+}
+.contact-pro-secondary:hover{
+    transform:translateY(-2px);
+    border-color:rgba(83,169,255,.42);
+    background:rgba(83,169,255,.06);
+}
+.contact-pro-panel{
+    position:relative;
+    min-height:430px;
+    padding:28px;
+    border:1px solid rgba(83,169,255,.22);
+    border-radius:24px;
+    background:linear-gradient(160deg,rgba(19,55,87,.74),rgba(7,18,31,.90));
+    box-shadow:0 35px 90px rgba(0,0,0,.30),0 0 50px rgba(21,132,238,.08);
+    overflow:hidden;
+}
+.contact-pro-panel::before{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    right:-90px;
+    top:-90px;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(35,140,240,.30),rgba(35,140,240,0) 68%);
+}
+.contact-pro-panel-top,.contact-pro-footer,.contact-pro-details{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+}
+.contact-pro-panel-top{
+    color:#6aaef2;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.17em;
+}
+.contact-pro-panel-main{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-top:70px;
+}
+.contact-pro-mark{
+    width:88px;
+    height:88px;
+    flex:0 0 88px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(83,169,255,.35);
+    border-radius:22px;
+    background:linear-gradient(145deg,rgba(31,137,241,.20),rgba(255,255,255,.03));
+    color:#fff;
+    font-size:34px;
+    font-weight:900;
+    letter-spacing:-.08em;
+    box-shadow:inset 0 0 30px rgba(47,154,255,.06);
+}
+.contact-pro-panel-main small{
+    display:block;
+    color:#5daaf5;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.18em;
+    margin-bottom:10px;
+}
+.contact-pro-panel-main h3{
+    margin:0;
+    max-width:230px;
+    color:#fff;
+    font-size:25px;
+    line-height:1.15;
+    letter-spacing:-.035em;
+}
+.contact-pro-details{
+    margin-top:62px;
+    align-items:flex-end;
+}
+.contact-pro-details div{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+.contact-pro-details div:last-child{text-align:right;}
+.contact-pro-details span{
+    color:#7391ad;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.15em;
+}
+.contact-pro-details strong{
+    color:#edf5fd;
+    font-size:12px;
+}
+.contact-pro-line{
+    height:1px;
+    margin-top:25px;
+    background:linear-gradient(90deg,rgba(83,169,255,.25),rgba(255,255,255,.05));
+}
+.contact-pro-footer{
+    margin-top:16px;
+    color:#829ab3;
+    font-size:11px;
+    font-weight:700;
+}
+.contact-pro-footer span:last-child{color:#55abff;font-size:16px;}
+@media(max-width:900px){
+    .contact-pro-container{grid-template-columns:1fr;gap:48px;}
+    .contact-pro-copy{max-width:850px;}
+    .contact-pro-panel{max-width:620px;width:100%;}
+}
+@media(max-width:620px){
+    .contact-pro{padding:85px 0 90px;}
+    .contact-pro-container{gap:34px;}
+    .contact-pro-copy h2{font-size:42px;}
+    .contact-pro-copy p{font-size:15px;line-height:1.7;}
+    .contact-pro-actions{align-items:stretch;flex-direction:column;}
+    .contact-pro-primary,.contact-pro-secondary{width:100%;} 
+    .contact-pro-panel{min-height:390px;padding:22px;}
+    .contact-pro-panel-main{margin-top:52px;}
+    .contact-pro-mark{width:74px;height:74px;flex-basis:74px;border-radius:18px;font-size:28px;}
+    .contact-pro-panel-main h3{font-size:21px;}
+    .contact-pro-details{margin-top:48px;flex-direction:column;align-items:stretch;}
+    .contact-pro-details div:last-child{text-align:left;}
+}
+</style>
+
+
+    <style>
+        /* =========================================================
+           DR TECNOLOGIA — HERO FINAL v3
+        ========================================================= */
+        .hero {
+            min-height: 760px;
+        }
+
+        .nav {
+            height: 86px;
+        }
+
+        .logo-link {
+            width: 158px;
+            height: 82px;
+        }
+
+        .logo {
+            width: 148px;
+            height: 82px;
+        }
+
+        .hero-content {
+            grid-template-columns: minmax(0, 1.08fr) minmax(400px, .92fr);
+            gap: 68px;
+            padding-top: 64px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            max-width: 680px;
+            font-size: clamp(46px, 5vw, 72px);
+            line-height: 1.01;
+        }
+
+        .hero-text > p {
+            max-width: 600px;
+            font-size: 17px;
+            line-height: 1.72;
+        }
+
+        .hero-buttons {
+            margin-top: 32px;
+        }
+
+        .hero-info {
+            margin-top: 46px;
+            gap: 30px;
+        }
+
+        .hero-info strong {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .hero-info span {
+            font-size: 10px;
+        }
+
+        .visual-card {
+            max-width: 540px;
+            min-height: 450px;
+            border-color: rgba(8, 124, 255, 0.24);
+            box-shadow:
+                0 35px 100px rgba(0, 0, 0, 0.38),
+                0 0 55px rgba(8, 124, 255, 0.08);
+        }
+
+        .visual-content {
+            padding: 38px 40px 34px;
+        }
+
+        .visual-title {
+            font-size: 33px;
+        }
+
+        .visual-grid {
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .visual-box {
+            min-height: 78px;
+            padding: 15px;
+        }
+
+        @media (max-width: 980px) {
+            .hero {
+                min-height: auto;
+                padding-bottom: 80px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 55px;
+                padding-top: 110px;
+            }
+
+            .hero-text {
+                max-width: 760px;
+            }
+
+            .hero-visual {
+                max-width: 620px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .visual-card {
+                max-width: 620px;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .nav {
+                height: 76px;
+            }
+
+            .logo-link {
+                width: 135px;
+                height: 68px;
+            }
+
+            .logo {
+                width: 126px;
+                height: 68px;
+            }
+
+            .hero-content {
+                padding-top: 92px;
+                gap: 42px;
+            }
+
+            .hero h1 {
+                font-size: clamp(39px, 11vw, 56px);
+            }
+
+            .hero-text > p {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-buttons .button {
+                width: 100%;
+            }
+
+            .hero-info {
+                flex-wrap: wrap;
+                gap: 22px 26px;
+                margin-top: 38px;
+            }
+
+            .visual-content {
+                padding: 30px 24px 28px;
+            }
+
+            .visual-title {
+                font-size: 28px;
+            }
+
+            .visual-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav">
+
+            <a
+                href="#inicio"
+                class="logo-link"
+            >
+
+                <img
+                    src="Logo_nova.png"
+                    alt="DR Tecnologia"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <nav class="menu" id="menu">
+
+                <a
+                    href="#inicio"
+                    class="menu-link active"
+                >
+                    Início
+                </a>
+
+                <a
+                    href="#solucoes"
+                    class="menu-link"
+                >
+                    Soluções
+                </a>
+
+                <a
+                    href="#dr-pdv"
+                    class="menu-link"
+                >
+                    DR PDV
+                </a>
+
+                <a
+                    href="#servicos"
+                    class="menu-link"
+                >
+                    Serviços
+                </a>
+
+                <a
+                    href="#sobre"
+                    class="menu-link"
+                >
+                    Sobre
+                </a>
+
+                <a
+                    href="#contato"
+                    class="menu-link"
+                >
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <a
+                href="https://wa.me/5554993433514?text=Olá!%20Gostaria%20de%20conhecer%20as%20soluções%20da%20DR%20Tecnologia."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-button"
+            >
+                Falar com a DR
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menu"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section
+            class="hero"
+            id="inicio"
+        >
+
+            <div class="hero-background"></div>
+
+
+            <div class="container hero-content">
+
+
+                <div class="hero-text reveal">
+
+                    <div class="eyebrow">
+
+                        <span></span>
+
+                        Tecnologia para empresas
+
+                    </div>
+
+
+                    <h1>
+
+                        Tecnologia que
+
+                        <strong>
+                            mantém seu negócio funcionando.
+                        </strong>
+
+                    </h1>
+
+
+                    <p>
+
+                        Sistemas de gestão, computadores,
+                        manutenção, redes e suporte técnico
+                        para você trabalhar com mais segurança,
+                        organização e eficiência.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#solucoes"
+                            class="button button-primary"
+                        >
+
+                            Conheça nossas soluções
+
+                            <span>→</span>
+
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/5554993433514?text=Olá!%20Gostaria%20de%20falar%20com%20a%20DR%20Tecnologia."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button button-secondary"
+                        >
+
+                            Falar no WhatsApp
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-info">
+
+                        <div>
+
+                            <strong>01</strong>
+
+                            <span>
+                                Soluções completas
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>02</strong>
+
+                            <span>
+                                Suporte especializado
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>03</strong>
+
+                            <span>
+                                Tecnologia sob medida
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="hero-visual reveal reveal-delay">
+
+                    <div class="visual-glow"></div>
+
+
+                    <div class="visual-card">
+
+                        <div class="visual-top">
+
+                            <div class="visual-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span>
+                                DR TECNOLOGIA
+                            </span>
+
+                        </div>
+
+
+                        <div class="visual-content">
+
+                            <div class="visual-label">
+                                SOLUÇÕES
+                            </div>
+
+
+                            <div class="visual-title">
+
+                                Tecnologia
+
+                                <br>
+
+                                para o seu negócio.
+
+                            </div>
+
+
+                            <div class="visual-lines">
+
+                                <div class="visual-line large"></div>
+
+                                <div class="visual-line"></div>
+
+                                <div class="visual-line medium"></div>
+
+                            </div>
+
+
+                            <div class="visual-grid">
+
+                                <div class="visual-box">
+
+                                    <small>
+                                        DR PDV
+                                    </small>
+
+                                    <strong>
+                                        Gestão
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="visual-box">
+
+                                    <small>
+                                        SUPORTE
+                                    </small>
+
+                                    <strong>
+                                        TI
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="visual-box">
+
+                                    <small>
+                                        HARDWARE
+                                    </small>
+
+                                    <strong>
+                                        PC
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="visual-box">
+
+                                    <small>
+                                        REDE
+                                    </small>
+
+                                    <strong>
+                                        INFRA
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SOLUÇÕES
+        ========================== -->
+
+        <section
+            class="section solutions"
+            id="solucoes"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <div class="eyebrow">
+
+                        <span></span>
+
+                        Nossas soluções
+
+                    </div>
+
+
+                    <h2>
+
+                        Tecnologia para
+
+                        <strong>
+                            cada necessidade.
+                        </strong>
+
+                    </h2>
+
+
+                    <p>
+
+                        Da gestão do seu negócio ao computador
+                        que sua equipe utiliza todos os dias.
+                        A DR Tecnologia reúne diferentes soluções
+                        em um só lugar.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="solutions-grid">
+
+
+                    <article class="solution-card featured reveal">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+
+                        <div class="card-icon">
+                            DR
+                        </div>
+
+
+                        <h3>
+                            DR PDV
+                        </h3>
+
+
+                        <p>
+
+                            Sistema de gestão para controlar
+                            vendas, produtos, estoque, caixa e
+                            as principais operações do seu negócio.
+
+                        </p>
+
+
+                        <a
+                            href="#dr-pdv"
+                            class="card-link"
+                        >
+
+                            Conhecer o DR PDV
+
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article
+                        class="solution-card reveal reveal-delay"
+                    >
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+
+                        <div class="card-icon">
+                            PC
+                        </div>
+
+
+                        <h3>
+                            Computadores
+                        </h3>
+
+
+                        <p>
+
+                            Montagem, venda, upgrades e
+                            configuração de computadores para
+                            trabalho, estudos, empresas e
+                            alto desempenho.
+
+                        </p>
+
+
+                        <a
+                            href="#contato"
+                            class="card-link"
+                        >
+
+                            Solicitar orçamento
+
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="solution-card reveal">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+
+                        <div class="card-icon">
+                            TI
+                        </div>
+
+
+                        <h3>
+                            Manutenção e suporte
+                        </h3>
+
+
+                        <p>
+
+                            Diagnóstico, manutenção, formatação,
+                            configuração e suporte para manter
+                            seus equipamentos funcionando.
+
+                        </p>
+
+
+                        <a
+                            href="#contato"
+                            class="card-link"
+                        >
+
+                            Conhecer serviço
+
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article
+                        class="solution-card reveal reveal-delay"
+                    >
+
+                        <div class="card-number">
+                            04
+                        </div>
+
+
+                        <div class="card-icon">
+                            NET
+                        </div>
+
+
+                        <h3>
+                            Redes e infraestrutura
+                        </h3>
+
+
+                        <p>
+
+                            Organização e configuração de redes,
+                            computadores, equipamentos e
+                            infraestrutura tecnológica.
+
+                        </p>
+
+
+                        <a
+                            href="#contato"
+                            class="card-link"
+                        >
+
+                            Falar com especialista
+
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DR PDV — SHOWCASE
+        ========================== -->
+
+        <section class="pdv-section pdv-showcase" id="dr-pdv">
+
+            <div class="container">
+
+                <div class="pdv-showcase-heading reveal">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        DR PDV — Gestão para o seu negócio
+                    </div>
+
+                    <h2>
+                        Gestão simples.
+                        <strong>Controle de verdade.</strong>
+                    </h2>
+
+                    <p>
+                        Conheça por dentro o DR PDV: uma solução criada para
+                        organizar vendas, produtos, estoque, caixa e a rotina
+                        da operação em um só sistema.
+                    </p>
+
+                </div>
+
+
+                <div class="pdv-showcase-layout">
+
+                    <div class="pdv-showcase-copy reveal">
+
+                        <div class="pdv-slide-counter">
+                            <span id="pdvCurrent">01</span>
+                            <i>/</i>
+                            <span id="pdvTotal">04</span>
+                        </div>
+
+                        <div class="pdv-copy-content">
+
+                            <span class="pdv-copy-kicker" id="pdvKicker">
+                                Acesso ao sistema
+                            </span>
+
+                            <h3 id="pdvSlideTitle">
+                                Entre no DR PDV
+                            </h3>
+
+                            <p id="pdvSlideText">
+                                Uma tela de acesso simples e objetiva para
+                                entrar no sistema e começar a operar.
+                            </p>
+
+                        </div>
+
+                        <div class="pdv-feature-mini">
+
+                            <span class="pdv-mini-icon" id="pdvMiniIcon">01</span>
+
+                            <div>
+                                <strong id="pdvMiniTitle">
+                                    Login
+                                </strong>
+
+                                <span id="pdvMiniText">
+                                    Acesso ao sistema
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="pdv-showcase-controls">
+
+                            <button
+                                type="button"
+                                class="pdv-arrow"
+                                id="pdvPrev"
+                                aria-label="Tela anterior"
+                            >
+                                ←
+                            </button>
+
+                            <div
+                                class="pdv-dots"
+                                id="pdvDots"
+                                aria-label="Selecionar tela do DR PDV"
+                            ></div>
+
+                            <button
+                                type="button"
+                                class="pdv-arrow"
+                                id="pdvNext"
+                                aria-label="Próxima tela"
+                            >
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <a
+                            href="https://wa.me/5554993433514?text=Olá!%20Vi%20o%20DR%20PDV%20no%20site%20da%20DR%20Tecnologia%20e%20quero%20conhecer%20o%20sistema."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button button-primary pdv-showcase-button"
+                        >
+                            Quero conhecer o DR PDV
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="pdv-showcase-screen reveal reveal-delay">
+
+                        <div class="pdv-browser">
+
+                            <div class="pdv-browser-top">
+
+                                <div class="pdv-browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="pdv-browser-title">
+                                    DR PDV
+                                </div>
+
+                                <div class="pdv-browser-status">
+                                    SISTEMA
+                                </div>
+
+                            </div>
+
+
+                            <div class="pdv-slide-stage">
+
+                                <div class="pdv-slide active" data-index="0">
+                                    <img
+                                        src="login.png"
+                                        alt="Tela de login do DR PDV"
+                                    >
+                                </div>
+
+                                <div class="pdv-slide" data-index="1">
+                                    <img
+                                        src="dashboard.png"
+                                        alt="Dashboard principal do DR PDV"
+                                    >
+                                </div>
+
+                                <div class="pdv-slide" data-index="2">
+                                    <img
+                                        src="vendas.png"
+                                        alt="Frente de Caixa do DR PDV"
+                                    >
+                                </div>
+
+                                <div class="pdv-slide" data-index="3">
+                                    <img
+                                        src="relatorios.png"
+                                        alt="Relatórios Gerenciais do DR PDV"
+                                    >
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pdv-screen-caption">
+
+                            <div>
+                                <span>DR PDV</span>
+                                <strong id="pdvScreenCaption">
+                                    Acesso ao sistema
+                                </strong>
+                            </div>
+
+                            <span class="pdv-screen-line"></span>
+
+                            <span class="pdv-screen-number" id="pdvScreenNumber">
+                                01 / 04
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pdv-module-strip reveal">
+
+                    <button type="button" class="pdv-module active" data-slide="0">
+                        <span>01</span>
+                        <strong>Login</strong>
+                        <small>Acesso ao sistema</small>
+                    </button>
+
+                    <button type="button" class="pdv-module" data-slide="1">
+                        <span>02</span>
+                        <strong>Dashboard</strong>
+                        <small>Visão geral da operação</small>
+                    </button>
+
+                    <button type="button" class="pdv-module" data-slide="2">
+                        <span>03</span>
+                        <strong>Frente de Caixa</strong>
+                        <small>Vendas e pagamentos</small>
+                    </button>
+
+                    <button type="button" class="pdv-module" data-slide="3">
+                        <span>04</span>
+                        <strong>Relatórios</strong>
+                        <small>Informações da operação</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SERVIÇOS
+        ========================== -->
+
+        <section class="section services services-pro" id="servicos">
+
+            <div class="container">
+
+                <div class="services-pro-head reveal">
+
+                    <div class="section-heading">
+
+                        <div class="eyebrow">
+                            <span></span>
+                            Serviços
+                        </div>
+
+                        <h2>
+                            Tecnologia que resolve.
+                            <strong><br>
+                                Suporte que acompanha.
+                            </strong>
+                        </h2>
+
+                        <p>
+                            Da manutenção de um computador à estrutura tecnológica de uma empresa,
+                            a DR Tecnologia cuida do que precisa funcionar todos os dias.
+                        </p>
+
+                    </div>
+
+                    <a
+                        class="services-pro-head-link"
+                        href="https://wa.me/5554993433514?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20DR%20Tecnologia."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com a DR
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+                <div class="services-pro-grid">
+
+                    <article class="service-card service-card-featured reveal">
+                        <div class="service-card-top">
+                            <span class="service-card-number">01</span>
+                            <span class="service-card-label">ESSENCIAL</span>
+                        </div>
+
+                        <div class="service-card-icon service-icon-pc">
+                            <span></span>
+                        </div>
+
+                        <h3>Manutenção e diagnóstico</h3>
+
+                        <p>
+                            Diagnóstico, manutenção preventiva e corretiva para manter
+                            seus computadores seguros, rápidos e funcionando corretamente.
+                        </p>
+
+                        <div class="service-card-footer">
+                            <span>Computadores</span>
+                            <span class="service-card-arrow">↗</span>
+                        </div>
+                    </article>
+
+
+                    <article class="service-card reveal reveal-delay">
+                        <div class="service-card-top">
+                            <span class="service-card-number">02</span>
+                            <span class="service-card-label">HARDWARE</span>
+                        </div>
+
+                        <div class="service-card-icon service-icon-upgrade">
+                            <span>↑</span>
+                        </div>
+
+                        <h3>Montagem, upgrade e PC Gamer</h3>
+
+                        <p>
+                            Montagens personalizadas, upgrades e computadores preparados
+                            para trabalho, estudo, jogos ou alto desempenho.
+                        </p>
+
+                        <div class="service-card-footer">
+                            <span>Projetos sob medida</span>
+                            <span class="service-card-arrow">↗</span>
+                        </div>
+                    </article>
+
+
+                    <article class="service-card reveal reveal-delay-2">
+                        <div class="service-card-top">
+                            <span class="service-card-number">03</span>
+                            <span class="service-card-label">EMPRESAS</span>
+                        </div>
+
+                        <div class="service-card-icon service-icon-support">
+                            <span>+</span>
+                        </div>
+
+                        <h3>Suporte para empresas</h3>
+
+                        <p>
+                            Apoio técnico para resolver problemas, organizar equipamentos
+                            e reduzir as paradas que atrapalham sua operação.
+                        </p>
+
+                        <div class="service-card-footer">
+                            <span>Suporte técnico</span>
+                            <span class="service-card-arrow">↗</span>
+                        </div>
+                    </article>
+
+
+                    <article class="service-card reveal">
+                        <div class="service-card-top">
+                            <span class="service-card-number">04</span>
+                            <span class="service-card-label">INFRAESTRUTURA</span>
+                        </div>
+
+                        <div class="service-card-icon service-icon-network">
+                            <span></span>
+                            <i></i>
+                            <b></b>
+                        </div>
+
+                        <h3>Redes e infraestrutura</h3>
+
+                        <p>
+                            Organização, configuração e suporte para redes e infraestrutura
+                            de tecnologia, com foco em estabilidade e segurança.
+                        </p>
+
+                        <div class="service-card-footer">
+                            <span>Conectividade</span>
+                            <span class="service-card-arrow">↗</span>
+                        </div>
+                    </article>
+
+
+                    <article class="service-card service-card-system reveal reveal-delay">
+                        <div class="service-card-top">
+                            <span class="service-card-number">05</span>
+                            <span class="service-card-label">SOLUÇÕES</span>
+                        </div>
+
+                        <div class="service-card-icon service-icon-system">
+                            <span>DR</span>
+                        </div>
+
+                        <h3>Sistemas e soluções</h3>
+
+                        <p>
+                            Soluções de tecnologia para simplificar processos e melhorar
+                            a gestão do negócio, incluindo o <strong>DR PDV</strong>.
+                        </p>
+
+                        <div class="service-card-footer">
+                            <span>Software e gestão</span>
+                            <span class="service-card-arrow">↗</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="services-pro-cta reveal">
+                    <div>
+                        <span class="services-pro-cta-eyebrow">PRECISA DE UMA SOLUÇÃO?</span>
+                        <h3>Vamos entender o que sua tecnologia precisa.</h3>
+                    </div>
+\                    <a
+                        href="https://wa.me/5554993433514?text=Olá!%20Preciso%20de%20ajuda%20com%20um%20serviço%20de%20tecnologia."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="services-pro-cta-button"
+                    >
+                        Solicitar atendimento
+                        <span>↗</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROJETOS REALIZADOS
+        ========================== -->
+
+        <section class="projects-section" id="projetos">
+
+            <div class="container">
+
+                <div class="projects-head reveal">
+
+                    <div class="section-heading">
+
+                        <div class="eyebrow">
+                            <span></span>
+                            Projetos realizados
+                        </div>
+
+                        <h2>
+                            Trabalho real.
+                            <strong><br>Resultado que aparece.</strong>
+                        </h2>
+
+                        <p>
+                            Alguns computadores, montagens e projetos realizados pela
+                            DR Tecnologia. Cada trabalho é feito pensando no resultado
+                            que o cliente precisa.
+                        </p>
+
+                    </div>
+
+                    <div class="projects-head-copy">
+                        Veja na prática o que fazemos: montagem, organização,
+                        upgrades e computadores preparados para trabalho,
+                        estudo, jogos e alto desempenho.
+                    </div>
+
+                </div>
+
+                <div class="projects-grid">
+
+                    <a class="project-card reveal" href="https://www.instagram.com/drtecnologiia/" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="dr_projeto_1.png" alt="Antes e depois de montagem de PC realizada pela DR Tecnologia">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-tag">Antes e depois</span>
+                                <h3>Organização e montagem profissional</h3>
+                                <p>Do gabinete desorganizado ao equipamento pronto para uso.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal reveal-delay" href="https://www.instagram.com/drtecnologiia/" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="dr_projeto_2.png" alt="PC Gamer montado pela DR Tecnologia">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-tag">PC Gamer</span>
+                                <h3>Setup montado e organizado</h3>
+                                <p>Montagem, organização e acabamento para entregar um PC pronto para jogar.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="project-card reveal" href="https://www.instagram.com/drtecnologiia/" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="dr_projeto_4.png" alt="PC Gamer pronto para uso da DR Tecnologia">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-tag">Computador pronto</span>
+                                <h3>PC Gamer pronto para usar</h3>
+                                <p>Configuração, testes e garantia para o cliente.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="project-card project-instagram-card reveal reveal-delay">
+                        <div class="project-instagram-inner">
+
+                            <div class="project-instagram-kicker">
+                                <img src="Logo_nova.png" alt="DR Tecnologia">
+                                <span>Instagram da DR Tecnologia</span>
+                            </div>
+
+                            <h3>
+                                Mais projetos,
+                                <strong>mais trabalhos reais.</strong>
+                            </h3>
+
+                            <p>
+                                Acompanhe as montagens, PCs Gamer, upgrades e outros
+                                trabalhos publicados pela DR Tecnologia no Instagram.
+                            </p>
+
+                            <a
+                                class="instagram-button"
+                                href="https://www.instagram.com/drtecnologiia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver @drtecnologiia
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="projects-note reveal">
+                    <span><strong>DR Tecnologia</strong> — computadores, suporte e soluções para o seu dia a dia.</span>
+                    <span>Veja mais trabalhos no Instagram →</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SOBRE A DR TECNOLOGIA
+        ========================== -->
+
+        <section
+            class="about-section about-pro"
+            id="sobre"
+        >
+
+            <div class="about-pro-grid"></div>
+            <div class="about-pro-glow about-pro-glow-one"></div>
+            <div class="about-pro-glow about-pro-glow-two"></div>
+
+            <div class="container about-pro-container">
+
+                <div class="about-pro-visual reveal">
+
+                    <div class="about-pro-topline">
+                        <span>DR TECNOLOGIA</span>
+                        <span>TECNOLOGIA PARA O MUNDO REAL</span>
+                    </div>
+
+                    <div class="about-pro-orbit orbit-one"></div>
+                    <div class="about-pro-orbit orbit-two"></div>
+
+                    <div class="about-pro-mark">
+                        <span>DR</span>
+                        <small>TECNOLOGIA</small>
+                    </div>
+
+                    <div class="about-pro-chip chip-one">
+                        <span></span> Hardware
+                    </div>
+
+                    <div class="about-pro-chip chip-two">
+                        <span></span> Infraestrutura
+                    </div>
+
+                    <div class="about-pro-chip chip-three">
+                        <span></span> Software
+                    </div>
+
+                    <div class="about-pro-bottomline">
+                        <span>COMPUTADORES</span>
+                        <i></i>
+                        <span>SUPORTE</span>
+                        <i></i>
+                        <span>SISTEMAS</span>
+                    </div>
+
+                </div>
+
+                <div class="about-pro-content reveal reveal-delay">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        Sobre a DR Tecnologia
+                    </div>
+
+                    <h2>
+                        Da infraestrutura
+                        <span>ao sistema de gestão.</span>
+                    </h2>
+
+                    <p class="about-pro-lead">
+                        A <strong>DR Tecnologia</strong> une hardware, suporte técnico, infraestrutura
+                        e desenvolvimento de software para transformar necessidades reais em soluções
+                        que funcionam no dia a dia.
+                    </p>
+
+                    <p>
+                        Trabalhamos com <strong>computadores, manutenção, upgrades, redes e suporte</strong>,
+                        além de criar soluções próprias como o <strong>DR PDV</strong> para simplificar
+                        processos e ajudar empresas a terem mais organização e controle.
+                    </p>
+
+                    <div class="about-pro-solutions">
+
+                        <div class="about-pro-solution">
+                            <div class="about-pro-solution-icon">01</div>
+                            <div>
+                                <small>HARDWARE</small>
+                                <strong>Computadores e upgrades</strong>
+                                <span>Montagem, manutenção e configuração.</span>
+                            </div>
+                        </div>
+
+                        <div class="about-pro-solution">
+                            <div class="about-pro-solution-icon">02</div>
+                            <div>
+                                <small>INFRAESTRUTURA</small>
+                                <strong>Redes e suporte técnico</strong>
+                                <span>Estrutura, configuração e atendimento.</span>
+                            </div>
+                        </div>
+
+                        <div class="about-pro-solution">
+                            <div class="about-pro-solution-icon">03</div>
+                            <div>
+                                <small>SOFTWARE</small>
+                                <strong>DR PDV e soluções próprias</strong>
+                                <span>Tecnologia criada para resolver processos.</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="about-pro-quote">
+                        <span>“</span>
+                        A tecnologia precisa funcionar para o negócio —
+                        não o negócio se adaptar à tecnologia.
+                    </div>
+
+                    <a
+                        href="#contato"
+                        class="text-link about-pro-link"
+                    >
+                        Falar com a DR Tecnologia
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             POR QUE A DR TECNOLOGIA?
+        ========================== -->
+
+        <section class="why-dr-section" id="porque-dr">
+
+            <div class="container">
+
+                <div class="why-dr-head">
+
+                    <div class="why-dr-heading reveal">
+
+                        <div class="eyebrow">
+                            <span></span>
+                            Por que a DR Tecnologia?
+                        </div>
+
+                        <h2>
+                            Tecnologia sem enrolação.
+                            <strong>Solução que faz sentido.</strong>
+                        </h2>
+
+                        <p>
+                            A DR Tecnologia combina atendimento direto, experiência prática e visão completa da operação para encontrar a solução certa — seja em um computador, uma rede ou um sistema de gestão.
+                        </p>
+
+                    </div>
+
+                    <div class="why-dr-signature reveal reveal-delay">
+                        <small>O jeito DR de trabalhar</small>
+                        <strong>Entender o problema antes de propor a solução.</strong>
+                    </div>
+
+                </div>
+
+                <div class="why-dr-grid">
+
+                    <article class="why-dr-card reveal">
+                        <div class="why-dr-card-number">01</div>
+                        <h3>Atendimento direto</h3>
+                        <p>Você fala com quem entende o problema e acompanha a execução do serviço de ponta a ponta.</p>
+                    </article>
+
+                    <article class="why-dr-card reveal reveal-delay">
+                        <div class="why-dr-card-number">02</div>
+                        <h3>Visão completa</h3>
+                        <p>Hardware, manutenção, redes, suporte e software fazem parte da mesma visão de tecnologia.</p>
+                    </article>
+
+                    <article class="why-dr-card reveal">
+                        <div class="why-dr-card-number">03</div>
+                        <h3>Solução sob medida</h3>
+                        <p>O foco é resolver a necessidade real do cliente, sem empurrar equipamento ou serviço sem necessidade.</p>
+                    </article>
+
+                    <article class="why-dr-card reveal reveal-delay">
+                        <div class="why-dr-card-number">04</div>
+                        <h3>Do suporte ao software</h3>
+                        <p>Além do suporte técnico, a DR desenvolve soluções próprias, como o DR PDV, para simplificar processos.</p>
+                    </article>
+
+                </div>
+
+                <div class="why-dr-bottom reveal">
+                    <span><strong>DR Tecnologia</strong> — pequena na estrutura, completa na solução.</span>
+                    <span>Computadores • Infraestrutura • Sistemas</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section class="contact-section contact-pro" id="contato">
+
+            <div class="contact-pro-grid"></div>
+            <div class="contact-pro-glow"></div>
+
+            <div class="container contact-pro-container">
+
+                <div class="contact-pro-copy reveal">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        Fale com a DR Tecnologia
+                    </div>
+
+                    <h2>
+                        Vamos tirar sua ideia
+                        <strong>do papel.</strong>
+                    </h2>
+
+                    <p>
+                        Precisa de um computador, manutenção, rede, suporte técnico
+                        ou uma solução de gestão? Conte o que sua empresa precisa.
+                    </p>
+
+                    <div class="contact-pro-actions">
+                        <a
+                            href="https://wa.me/5554993433514?text=Olá!%20Entrei%20no%20site%20da%20DR%20Tecnologia%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-pro-primary"
+                        >
+                            Solicitar orçamento
+                            <span>↗</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/drtecnologiia/" target="_blank" rel="noopener noreferrer" class="contact-pro-secondary">
+                            Ver nossos projetos
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contact-pro-panel reveal reveal-delay">
+
+                    <div class="contact-pro-panel-top">
+                        <span>DR TECNOLOGIA</span>
+                        <span>ATENDIMENTO</span>
+                    </div>
+
+                    <div class="contact-pro-panel-main">
+                        <div class="contact-pro-mark">DR</div>
+                        <div>
+                            <small>TECNOLOGIA</small>
+                            <h3>Sua solução começa aqui.</h3>
+                        </div>
+                    </div>
+
+                    <div class="contact-pro-details">
+                        <div>
+                            <span>WHATSAPP</span>
+                            <strong>Falar com a DR</strong>
+                        </div>
+                        <div>
+                            <span>ATUAÇÃO</span>
+                            <strong>Hardware • TI • Sistemas</strong>
+                        </div>
+                    </div>
+
+                    <div class="contact-pro-line"></div>
+
+                    <div class="contact-pro-footer">
+                        <span>Atendimento direto</span>
+                        <span>↗</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+
+        <div class="container footer-top">
+
+
+            <div class="footer-brand">
+
+
+                <img
+                    src="Logo_nova.png"
+                    alt="DR Tecnologia"
+                >
+
+
+                <p>
+                    Tecnologia que mantém seu negócio funcionando.
+                </p>
+
+
+                <div class="footer-owner">
+
+                    <strong>
+                        David dos Reis
+                    </strong>
+
+                    <span>
+                        CNPJ: 65.987.626/0001-89
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Navegação
+                </h4>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#solucoes">
+                    Soluções
+                </a>
+
+                <a href="#dr-pdv">
+                    DR PDV
+                </a>
+
+                <a href="#servicos">
+                    Serviços
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Empresa
+                </h4>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+                <a
+                    href="https://wa.me/5554993433514"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Soluções
+                </h4>
+
+                <a href="#dr-pdv">
+                    DR PDV
+                </a>
+
+                <a href="#servicos">
+                    Computadores
+                </a>
+
+                <a href="#servicos">
+                    Manutenção
+                </a>
+
+                <a href="#servicos">
+                    Redes
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 DR Tecnologia. Todos os direitos reservados.
+            </span>
+
+
+            <span>
+                David dos Reis • CNPJ 65.987.626/0001-89
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         WHATSAPP
+    ========================== -->
+
+    <a
+        href="https://wa.me/5554993433514?text=Olá!%20Gostaria%20de%20falar%20com%20a%20DR%20Tecnologia."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-button"
+        aria-label="Falar com a DR Tecnologia pelo WhatsApp"
+    >
+
+        <span class="whatsapp-icon">
+            WA
+        </span>
+
+        <span class="whatsapp-text">
+            Falar com a DR
+        </span>
+
+    </a>
+
+
+
+
+    <style>
+        /* =========================================================
+           DR PDV — SHOWCASE / SLIDE PROFISSIONAL
+        ========================================================= */
+
+        .pdv-showcase {
+            position: relative;
+            overflow: hidden;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .pdv-showcase::before {
+            content: "";
+            position: absolute;
+            width: 620px;
+            height: 620px;
+            right: -260px;
+            top: 80px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(8,124,255,.13) 0%, rgba(8,124,255,0) 68%);
+            pointer-events: none;
+        }
+
+        .pdv-showcase-heading {
+            max-width: 790px;
+            margin-bottom: 58px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pdv-showcase-heading h2 {
+            margin: 18px 0 20px;
+            font-size: clamp(42px, 5vw, 68px);
+            line-height: 1.02;
+            letter-spacing: -2.5px;
+        }
+
+        .pdv-showcase-heading h2 strong {
+            display: block;
+            color: var(--blue-light);
+        }
+
+        .pdv-showcase-heading p {
+            max-width: 700px;
+            color: var(--text-soft);
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .pdv-showcase-layout {
+            display: grid;
+            grid-template-columns: minmax(280px, .78fr) minmax(0, 1.55fr);
+            gap: 54px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pdv-showcase-copy {
+            min-width: 0;
+        }
+
+        .pdv-slide-counter {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--blue-light);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 38px;
+        }
+
+        .pdv-slide-counter i {
+            color: rgba(255,255,255,.25);
+            font-style: normal;
+        }
+
+        .pdv-copy-content {
+            min-height: 205px;
+        }
+
+        .pdv-copy-kicker {
+            display: inline-block;
+            color: var(--blue-light);
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            margin-bottom: 15px;
+        }
+
+        .pdv-copy-content h3 {
+            margin: 0 0 15px;
+            font-size: clamp(30px, 3vw, 46px);
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+        }
+
+        .pdv-copy-content p {
+            margin: 0;
+            color: var(--text-soft);
+            font-size: 16px;
+            line-height: 1.75;
+            max-width: 430px;
+        }
+
+        .pdv-feature-mini {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 0 20px;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+
+        .pdv-mini-icon {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            border: 1px solid var(--border-blue);
+            background: var(--blue-soft);
+            color: var(--blue-light);
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .pdv-feature-mini div {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .pdv-feature-mini strong {
+            font-size: 14px;
+        }
+
+        .pdv-feature-mini span:not(.pdv-mini-icon) {
+            color: var(--text-soft);
+            font-size: 12px;
+        }
+
+        .pdv-showcase-controls {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-bottom: 25px;
+        }
+
+        .pdv-arrow {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,.025);
+            color: var(--text);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 17px;
+        }
+
+        .pdv-arrow:hover {
+            border-color: var(--border-blue);
+            background: var(--blue-soft);
+            color: var(--blue-light);
+            transform: translateY(-2px);
+        }
+
+        .pdv-dots {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .pdv-dot {
+            width: 7px;
+            height: 7px;
+            padding: 0;
+            border: 0;
+            border-radius: 99px;
+            background: rgba(255,255,255,.2);
+            cursor: pointer;
+            transition: .35s ease;
+        }
+
+        .pdv-dot.active {
+            width: 26px;
+            background: var(--blue-light);
+        }
+
+        .pdv-showcase-button {
+            margin-top: 2px;
+        }
+
+        .pdv-showcase-screen {
+            min-width: 0;
+        }
+
+        .pdv-browser {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(8,124,255,.30);
+            border-radius: 22px;
+            background: #060b13;
+            box-shadow:
+                0 35px 90px rgba(0,0,0,.45),
+                0 0 70px rgba(8,124,255,.09);
+        }
+
+        .pdv-browser::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.025);
+            pointer-events: none;
+        }
+
+        .pdv-browser-top {
+            height: 54px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            padding: 0 17px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            background: rgba(10,16,26,.95);
+        }
+
+        .pdv-browser-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .pdv-browser-dots span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #3c4657;
+        }
+
+        .pdv-browser-title {
+            color: #aeb8c7;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .pdv-browser-status {
+            justify-self: end;
+            color: var(--blue-light);
+            font-size: 8px;
+            letter-spacing: 1.5px;
+            font-weight: 800;
+        }
+
+        .pdv-slide-stage {
+            position: relative;
+            height: 520px;
+            background:
+                radial-gradient(circle at 50% 50%, rgba(8,124,255,.08), transparent 52%),
+                #070c14;
+        }
+
+        .pdv-slide {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            padding: 22px;
+            opacity: 0;
+            transform: translateX(28px) scale(.985);
+            pointer-events: none;
+            transition: opacity .5s ease, transform .5s ease;
+        }
+
+        .pdv-slide.active {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            pointer-events: auto;
+        }
+
+        .pdv-slide img {
+            display: block;
+            max-width: 100%;
+            max-height: 476px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+            box-shadow: 0 20px 50px rgba(0,0,0,.45);
+        }
+
+        .pdv-slide[data-index="0"] img {
+            max-height: 465px;
+        }
+
+        .pdv-screen-caption {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 17px 20px;
+            border-top: 1px solid rgba(255,255,255,.07);
+            background: #080e17;
+        }
+
+        .pdv-screen-caption div {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .pdv-screen-caption div span:first-child {
+            color: var(--blue-light);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        .pdv-screen-caption strong {
+            font-size: 13px;
+        }
+
+        .pdv-screen-line {
+            flex: 1;
+            height: 1px;
+            background: rgba(255,255,255,.08);
+        }
+
+        .pdv-screen-number {
+            color: var(--text-soft);
+            font-size: 11px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .pdv-module-strip {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 25px;
+            border: 1px solid var(--border);
+            border-radius: 17px;
+            overflow: hidden;
+            background: rgba(255,255,255,.015);
+        }
+
+        .pdv-module {
+            position: relative;
+            min-height: 92px;
+            padding: 17px 20px;
+            text-align: left;
+            border: 0;
+            border-right: 1px solid var(--border);
+            background: transparent;
+            color: var(--text);
+            cursor: pointer;
+            transition: .35s ease;
+        }
+
+        .pdv-module:last-child {
+            border-right: 0;
+        }
+
+        .pdv-module:hover,
+        .pdv-module.active {
+            background: linear-gradient(135deg, rgba(8,124,255,.14), rgba(8,124,255,.035));
+        }
+
+        .pdv-module.active::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--blue-light);
+        }
+
+        .pdv-module span,
+        .pdv-module strong,
+        .pdv-module small {
+            display: block;
+        }
+
+        .pdv-module span {
+            color: var(--blue-light);
+            font-size: 10px;
+            font-weight: 800;
+            margin-bottom: 7px;
+        }
+
+        .pdv-module strong {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .pdv-module small {
+            color: var(--text-soft);
+            font-size: 10px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 900px) {
+            .pdv-showcase-layout {
+                grid-template-columns: 1fr;
+                gap: 42px;
+            }
+
+            .pdv-showcase-copy {
+                max-width: 650px;
+            }
+
+            .pdv-slide-stage {
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .pdv-showcase {
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+
+            .pdv-showcase-heading {
+                margin-bottom: 40px;
+            }
+
+            .pdv-showcase-heading h2 {
+                letter-spacing: -1.5px;
+            }
+
+            .pdv-copy-content {
+                min-height: auto;
+            }
+
+            .pdv-slide-stage {
+                height: 390px;
+            }
+
+            .pdv-slide {
+                padding: 12px;
+            }
+
+            .pdv-slide img {
+                max-height: 365px;
+            }
+
+            .pdv-slide[data-index="0"] img {
+                max-height: 350px;
+            }
+
+            .pdv-module-strip {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .pdv-module:nth-child(2) {
+                border-right: 0;
+            }
+
+            .pdv-module:nth-child(-n+2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .pdv-screen-line {
+                display: none;
+            }
+        }
+    </style>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const slides = Array.from(document.querySelectorAll(".pdv-slide"));
+            const dotsContainer = document.getElementById("pdvDots");
+            const modules = Array.from(document.querySelectorAll(".pdv-module"));
+            const prevButton = document.getElementById("pdvPrev");
+            const nextButton = document.getElementById("pdvNext");
+
+            const current = document.getElementById("pdvCurrent");
+            const total = document.getElementById("pdvTotal");
+            const kicker = document.getElementById("pdvKicker");
+            const title = document.getElementById("pdvSlideTitle");
+            const text = document.getElementById("pdvSlideText");
+            const miniIcon = document.getElementById("pdvMiniIcon");
+            const miniTitle = document.getElementById("pdvMiniTitle");
+            const miniText = document.getElementById("pdvMiniText");
+            const screenCaption = document.getElementById("pdvScreenCaption");
+            const screenNumber = document.getElementById("pdvScreenNumber");
+            const showcase = document.querySelector(".pdv-showcase");
+
+            if (!slides.length) return;
+
+            const data = [
+                {
+                    kicker: "Acesso ao sistema",
+                    title: "Entre no DR PDV",
+                    text: "Uma tela de acesso simples e objetiva para entrar no sistema e começar a operar.",
+                    miniTitle: "Login",
+                    miniText: "Acesso ao sistema",
+                    caption: "Acesso ao sistema"
+                },
+                {
+                    kicker: "Visão geral da operação",
+                    title: "Tenha tudo sob controle",
+                    text: "O dashboard reúne informações importantes sobre vendas, estoque e situação do caixa em uma visão clara.",
+                    miniTitle: "Dashboard",
+                    miniText: "Visão geral da operação",
+                    caption: "Painel principal"
+                },
+                {
+                    kicker: "Frente de Caixa",
+                    title: "Venda com mais agilidade",
+                    text: "A frente de caixa concentra produtos, carrinho, total do pedido e formas de pagamento em uma única tela.",
+                    miniTitle: "Vendas / PDV",
+                    miniText: "Frente de Caixa",
+                    caption: "Frente de Caixa — PDV"
+                },
+                {
+                    kicker: "Informações para gestão",
+                    title: "Transforme dados em informação",
+                    text: "Relatórios organizam vendas, formas de pagamento, produtos mais vendidos e alertas de estoque.",
+                    miniTitle: "Relatórios",
+                    miniText: "Informações da operação",
+                    caption: "Relatórios Gerenciais"
+                }
+            ];
+
+            let index = 0;
+            let timer = null;
+
+            total.textContent = String(slides.length).padStart(2, "0");
+
+            data.forEach(function (_, i) {
+                const dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "pdv-dot" + (i === 0 ? " active" : "");
+                dot.setAttribute("aria-label", "Mostrar tela " + (i + 1));
+                dot.addEventListener("click", function () {
+                    showSlide(i, true);
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = Array.from(dotsContainer.querySelectorAll(".pdv-dot"));
+
+            function showSlide(nextIndex, restartTimer) {
+                index = (nextIndex + slides.length) % slides.length;
+
+                slides.forEach(function (slide, i) {
+                    slide.classList.toggle("active", i === index);
+                });
+
+                dots.forEach(function (dot, i) {
+                    dot.classList.toggle("active", i === index);
+                });
+
+                modules.forEach(function (module, i) {
+                    module.classList.toggle("active", i === index);
+                });
+
+                const item = data[index];
+
+                current.textContent = String(index + 1).padStart(2, "0");
+                kicker.textContent = item.kicker;
+                title.textContent = item.title;
+                text.textContent = item.text;
+                miniIcon.textContent = String(index + 1).padStart(2, "0");
+                miniTitle.textContent = item.miniTitle;
+                miniText.textContent = item.miniText;
+                screenCaption.textContent = item.caption;
+                screenNumber.textContent =
+                    String(index + 1).padStart(2, "0") +
+                    " / " +
+                    String(slides.length).padStart(2, "0");
+
+                if (restartTimer) startTimer();
+            }
+
+            function nextSlide() {
+                showSlide(index + 1, true);
+            }
+
+            function prevSlide() {
+                showSlide(index - 1, true);
+            }
+
+            function startTimer() {
+                clearInterval(timer);
+                timer = setInterval(nextSlide, 6500);
+            }
+
+            prevButton.addEventListener("click", prevSlide);
+            nextButton.addEventListener("click", nextSlide);
+
+            modules.forEach(function (module) {
+                module.addEventListener("click", function () {
+                    showSlide(Number(module.dataset.slide), true);
+                });
+            });
+
+            if (showcase) {
+                showcase.addEventListener("mouseenter", function () {
+                    clearInterval(timer);
+                });
+
+                showcase.addEventListener("mouseleave", function () {
+                    startTimer();
+                });
+            }
+
+            showSlide(0, false);
+            startTimer();
+
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
